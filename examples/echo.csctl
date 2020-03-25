@@ -1,0 +1,11 @@
+echo Hello world
+delay 1.5
+echo Hello again
+delay 1.5
+echo Hello again
+delay 1.5
+echo Hello again
+delay 1.5
+echo Hello again
+delay 1.5
+echo Goodbye world

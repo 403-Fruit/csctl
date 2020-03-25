@@ -1,0 +1,11 @@
++moveleft
+delay 0.15
+-moveleft
++moveright
+delay 0.001
++attack
+delay 0.001
+-attack
+delay 0.138
+-moveright
+delay 0.1
