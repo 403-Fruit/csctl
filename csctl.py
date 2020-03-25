@@ -17,10 +17,9 @@ def signal_handler(signal, frame):
 	print("\nquitting...")
 	sys.exit(0)
 
-# Print bold text
+# Print with emojis
 def print_e(message):
 	print(colored(emoji.emojize(message, use_aliases=True), attrs=['bold']))
-	#print(colored(message, attrs=['bold']))
 
 # List PIDs of processes matching processName
 def processExists(processName):
@@ -37,11 +36,13 @@ def run(txn, command):
 	sleep(0.005)
 
 signal.signal(signal.SIGINT, signal_handler)
+
 def main():
 	if (len(sys.argv) > 1):
 		if (sys.argv[1] == "-h" or sys.argv[1] == "--help"):
 			print(colored("Run with no arguments to initiate and connect to csgo", attrs=['bold']))
 			print(colored("Make sure you set up csgo to receive connections with this launch option: -netconport "+str(tn_port), attrs=['bold']))
+	
 	# Make sure cs:go is running before trying to connect
 	if not processExists("csgo.exe"):
 		print_e(":information: Waiting for csgo to start... ")
@@ -64,7 +65,7 @@ def main():
 		print(colored("  -netconport "+str(tn_port), attrs=['bold']))
 		sys.exit(1)
 	tn.write(b"echo CSCTL Active, use exectn instruction_file to execute commands\n")
-	tn.read_until(b"keybind")
+	tn.read_until(b"commands")
 	print_e(":heavy_check_mark: Successfully Connected")
 
 	while True:
