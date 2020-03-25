@@ -3,6 +3,7 @@ Scripting CS:GO over telnet.
 
 ## Description
 Execute cs:go commands from a file over telnet. This allows you to control execution timing and allows you to script usercmds (+left, +jump, etc.)  
+
 Tested on Python 3.7.4 but not extensively.  
 
 Big thanks to [@nibalizer](https://github.com/nibalizer) for [this project](https://github.com/nibalizer/csgo_remote_control), which was a huge help in figuring out how to interface with the client
