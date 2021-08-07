@@ -55,8 +55,8 @@ def main():
 	try:
 		tn = telnetlib.Telnet(tn_host, tn_port)
 	except ConnectionRefusedError:
-		# Retry in 10 seconds
-		sleep(10)
+		# Retry in 30 seconds
+		sleep(30)
 		pass
 	try:
 		tn = telnetlib.Telnet(tn_host, tn_port)

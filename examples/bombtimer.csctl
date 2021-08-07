@@ -1,0 +1,83 @@
+alias "filter_time" "con_filter_text time_"
+alias "filter_damage" "con_filter_text damage Given"
+filter_time
+delay 0.5
+log_color console FFD700FF; clear; echo time_38
+delay 1
+clear; echo time_37
+delay 1
+clear; echo time_36
+delay 1
+clear; echo time_35
+delay 1
+clear; echo time_34
+delay 1
+clear; echo time_33
+delay 1
+clear; echo time_32
+delay 1
+clear; echo time_31
+delay 1
+clear; echo time_30
+delay 1
+clear; echo time_29
+delay 1
+clear; echo time_28
+delay 1
+clear; echo time_27
+delay 1
+clear; echo time_26; sndplaydelay 1 ui/beep07
+delay 1
+log_color console FF7F50FF; clear; echo time_25
+delay 1
+clear; echo time_24
+delay 1
+clear; echo time_23
+delay 1
+clear; echo time_22
+delay 1
+clear; echo time_21; sndplaydelay 1 ui/beep07
+delay 1
+clear; echo time_20
+delay 1
+clear; echo time_19
+delay 1
+clear; echo time_18
+delay 1
+clear; echo time_17
+delay 1
+clear; echo time_16; sndplaydelay 1 buttons/blip2
+delay 1
+log_color console AF0000FF; clear; echo time_15
+delay 1
+clear; echo time_14
+delay 1
+clear; echo time_13
+delay 1
+clear; echo time_12
+delay 1
+clear; echo time_11; sndplaydelay 1 buttons/blip2
+delay 1
+clear; echo time_10
+delay 1
+clear; echo time_9
+delay 1
+clear; echo time_8
+delay 1
+clear; echo time_7
+delay 1
+clear; echo time_6; sndplaydelay 1 ui/beep22
+delay 1
+clear; echo time_5
+delay 1
+clear; echo time_4
+delay 1
+clear; echo time_3
+delay 1
+clear; echo time_2
+delay 1
+clear; echo time_1
+delay 1
+clear; echo time_0; filter_damage; log_color console FFFFFFFF
+delay 1
+clear
